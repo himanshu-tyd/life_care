@@ -1,0 +1,107 @@
+$green: #16a085;
+$black: #444;
+$ligth-color: #777;
+$box-shadow: 1px 2px 0 rgba(22, 160, 133, 0.2);
+$text-shadow: 0.2 2px 0 rgba(0, 0, 0, 0.3);
+$border: 1em solid var($green);
+
+.services {
+  padding: 5rem 9%;
+
+  h1 {
+   text-align: center;
+   padding-bottom: 2em;
+   text-shadow: $text-shadow;
+    gap: 0.5em;
+    font-size: medium;
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+    font-size: 3em;
+    
+    span{
+        text-shadow: $text-shadow;
+       color: $green;
+    }
+
+  }
+
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40em, 1fr)); /* Divide into 3 equal columns */
+    // grid-auto-columns: ;
+    gap: 2em;
+    @media screen and (max-width: 769px) {
+       
+        grid-template-columns: 1fr 1fr; 
+        justify-content: center; 
+      }
+    @media screen and (max-width: 667px) {
+       
+        grid-template-columns: 1fr ; 
+        justify-content: center; 
+      }
+
+
+    .box {
+      border:2px solid $green;
+      background: #fff;
+      border-radius: 0.5em;
+      box-shadow: 6px 5px 0px rgba(22, 160, 133, 0.2);
+      padding: 5em 9%;
+
+      .icon {
+        display: flex;
+        justify-content: center;
+        font-size: 5rem;
+        color: $green;
+      }
+
+      h3{
+        color:$black ;
+        font-size: 2.5rem;
+        padding: 2rem 0;
+      
+      }
+
+      p {
+        color: $ligth-color;
+        font-size: 1.4rem;
+        line-height: 1.5;
+      }
+
+      a {
+        display: inline-block;
+        height: 20%;
+        margin-top: 3em;
+        padding: 6px 6px;
+        font-size: 1.3em;
+        text-shadow: $text-shadow;
+        box-shadow: $box-shadow;
+        border: 1px solid $green;
+        border-radius: 5px;
+        color: $green;
+
+        &:hover {
+          background: $green;
+          color: #fff;
+
+          span {
+            background: #fff;
+            color: $green;
+            box-shadow: $box-shadow;
+          }
+        }
+
+        span {
+          padding: 0.3px 10px;
+          color: #fff;
+          background: $green;
+          margin-left: 7px;
+          border-radius: 5px;
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+}
+

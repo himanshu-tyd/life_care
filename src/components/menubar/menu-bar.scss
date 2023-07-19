@@ -1,0 +1,24 @@
+$green: #16a085;
+
+.menu-container {
+  width: auto;
+  background: #eee;
+  border-radius: 3px;
+  color: $green;
+  padding: 1em 1em;
+  cursor: pointer;
+  display: none;
+
+  .nav-bar {
+    color: $green;
+    height: 2em;
+    width: auto;
+  }
+}
+
+@media (max-width: 755px) {
+  .menu-container {
+    display: block;
+    
+  }
+}

@@ -1,0 +1,41 @@
+$green: #16a085;
+$black: #444;
+$ligth-color: #777;
+$box-shadow: 1px 2px 0 rgba(22, 160, 133, 0.2);
+$text-shadow: 0.2px 2px 0 rgba(0, 0, 0, 0.3);
+$border: 0.2rem solid var($green);
+
+.icon-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  padding: 10rem 9%;
+  gap: 2em;
+  font-size: 1.2em;
+
+  .icon {
+    border: 2px solid $green;
+    box-sizing: content-box;
+    background: #fff;
+    box-shadow: 0px 1px 4px 0px rgb(22 160 133);
+    text-align: center;
+    border-radius: 0.5rem;
+    padding: 2em 2em;
+
+    .fev {
+      color: $green;
+      font-size: 3.5em;
+      margin-bottom: 0.5em;
+    }
+
+    h3 {
+      font-size: 2.5em;
+      text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
+      color: $black;
+    }
+    p {
+      font-size: 1em;
+      color: $black;
+      text-shadow: 3px 3px 0 2px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
