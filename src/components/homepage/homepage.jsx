@@ -3,17 +3,20 @@ import HeaderPage from "../header/header";
 import MainSection from "../main-section/main";
 import Icons from "../icons/icons";
 import Services from "../services/services";
+import AboutPage from "../../pages/about-us/about";
+import DoctorList from "../doctor/doctor";
 
-const HomePage=()=>{
-    return(
-        <div className="homepage">
-            <HeaderPage/>
-            <MainSection/>
-            <Icons/>
-            <Services/>
-        </div>
-    )
-        
-}
+const HomePage = () => {
+  return (
+    <div className="homepage">
+      <HeaderPage />
+      <MainSection />
+      <Icons />
+      <Services />
+      <AboutPage />
+      <DoctorList />
+    </div>
+  );
+};
 
 export default HomePage;
