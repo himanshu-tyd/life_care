@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.styles.scss";
 import CustomButton from "../../components/custom-button/custom-button";
-import { ReactComponent as Doctor } from "../../assets/life.svg";
+import Doctor from "../../assets/life.svg";
 
 const AboutPage = ({ label }) => {
   return (
@@ -12,7 +12,7 @@ const AboutPage = ({ label }) => {
 
       <div className="row">
         <div className="image">
-          <Doctor className="img" />
+        <img src={Doctor} alt="reading" className="img"/>
         </div>
 
         <div className="content">

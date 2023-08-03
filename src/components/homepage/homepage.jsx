@@ -5,6 +5,8 @@ import Icons from "../icons/icons";
 import Services from "../services/services";
 import AboutPage from "../../pages/about-us/about";
 import DoctorList from "../doctor/doctor";
+import Book from "../book/book";
+import Reviews from "../review/review";
 
 const HomePage = () => {
   return (
@@ -15,6 +17,8 @@ const HomePage = () => {
       <Services />
       <AboutPage />
       <DoctorList />
+      <Book/>
+      <Reviews/>
     </div>
   );
 };

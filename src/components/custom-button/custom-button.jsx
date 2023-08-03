@@ -1,4 +1,5 @@
-// CustomButton.js
+//custome buttons
+
 import React from "react";
 import "./custom-button.scss";
 import { Link } from "react-router-dom";

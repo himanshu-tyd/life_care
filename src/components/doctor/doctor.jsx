@@ -24,7 +24,7 @@ const DoctorList = () => {
             <p>{doctor.degree}</p>
             <div className="social-media">
               <BiLogoFacebook />
-              <BiLogoTwitter />
+              <BiLogoTwitter  />
               <BiLogoInstagram />
               <BiLogoLinkedin />
             </div>

@@ -1,0 +1,87 @@
+$green: #16a085;
+$black: #444;
+$ligth-color: #777;
+$box-shadow: 1px 2px 0 rgba(22, 160, 133, 0.2);
+$text-shadow: 0.2 2px 0 rgba(0, 0, 0, 0.3);
+$border: 1em solid var($green);
+
+.review {
+  padding: 5em 9%;
+
+  h1 {
+    text-align: center;
+    padding-bottom: .3em;
+    text-shadow: $text-shadow;
+    gap: 0.5em;
+    font-size: medium;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    font-size: 3em;
+    margin-bottom: 2em;
+
+    span {
+      text-shadow: $text-shadow;
+      color: $green;
+    }
+  }
+
+  .box-container {
+    // justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px ,1fr));
+    gap: 2em;
+    
+
+    .box {
+    
+      text-align: center;
+      border: 2px solid $green;
+      background: #fff;
+      border-radius: 0.5em;
+      box-shadow: 6px 5px 0px rgba(22, 160, 133, 0.2);
+      padding: 2em;
+      height: 40em;
+      position: relative;
+      overflow: hidden;
+      z-index: 0;
+      
+      &::before{
+        content: " ";
+        position: absolute;
+        top: 0 ; left: 50%;
+        transform: translateX(-50%);
+        background:$green;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        height: 27em;
+        width:  120%;
+        z-index: -1;
+      }
+
+      img {
+        height: 15em;
+        width: 15em;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 0.8em solid #fff;
+       
+      }
+
+      h3{
+        color: #fff;
+        font-size: 2em;
+        padding: .5em 0;
+      }
+  
+      p{
+        color: $ligth-color;
+        line-height: 1.8em;
+        font-size: 1em;
+        padding-top: 3em;
+      }
+
+
+
+    }
+  }
+}

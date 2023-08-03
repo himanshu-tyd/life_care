@@ -1,0 +1,78 @@
+$green: #16a085;
+$black: #444;
+$ligth-color: #777;
+$box-shadow: 1px 2px 0 rgba(22, 160, 133, 0.2);
+$text-shadow: 0.2 2px 0 rgba(0, 0, 0, 0.3);
+$border: 1em solid var($green);
+
+.book {
+  padding: 5em 9%;
+
+  h1 {
+    text-align: center;
+    padding-bottom: 1em;
+    text-shadow: $text-shadow;
+    gap: 0.5em;
+    font-size: medium;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    font-size: 3em;
+    margin-bottom: 1em;
+
+    span {
+      text-shadow: $text-shadow;
+      color: $green;
+    }
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2em;
+
+    @media (max-width: 632px) {
+      grid-template-columns: 1fr;
+    }
+
+    .image-container {
+      img {
+        width: 100%;
+      }
+    }
+
+    form {
+        border: 2px solid $green;
+        box-sizing: content-box;
+        background: #fff;
+        // box-shadow: 0px 1px 4px 0px rgb(22 160 133);
+        box-shadow: 6px 5px 0px rgba(22, 160, 133, 0.2);
+        text-align: center;
+        border-radius: 0.5rem;
+        padding: 2em 2em;
+
+      h3 {
+        font-size: 2em;
+        color: $black;
+        margin-bottom: 3em;
+      }
+
+      input {
+        border: none;
+        width: 100%;
+        margin: 2% 0;
+        font-size: 1.5em;
+        border-radius: 3px;
+        color: $black;
+        text-transform: none;
+        height: 0.7em;
+        padding: 1em;
+        border: 2px solid #16a085;
+        
+
+        &:hover {
+          background: rgb(242, 242, 242);
+        }
+      }
+    }
+  }
+}

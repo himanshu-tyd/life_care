@@ -4,7 +4,7 @@ const DOCTOR_LIST = [
     name: "Dr. Jessica Lopez",
     imageUrl:
       "https://shorturl.at/jkUW5",
-      experties:"Doctor of Osteopathic Medicine (DO)",
+      experties:"Doctor of Osteopathic Medicine",
     degree:" Family Medicine",
   },
   {
