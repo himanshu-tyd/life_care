@@ -14,7 +14,7 @@ const Reviews=()=>{
                 <div id={list.id} className="box">
                     <img src={list.imageUrl} alt={list.name}/>
                     <h3>{list.name}</h3>
-                    <StarRating totalStars={5}/>
+                    <StarRating totalStars={5} className="star"/>
                     <p >{list.review}</p>
                 </div>
             ))

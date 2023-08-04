@@ -49,24 +49,12 @@ $border: 0.2rem solid $green;
       color: $green;
       font-size: 1.5em;
       color: $ligth-color;
-
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        height: 2px;
-        width: 0;
-        background-color: $green;
-        transition: width 0.3s;
-      }
+    
       
 
       &:hover {
         color: $green;
-        &::after {
-          width: 100%;
-        }
+        
       }
     }
 
@@ -132,6 +120,7 @@ $border: 0.2rem solid $green;
       background: #fff;
       transition: width 0.3s ease;
       border-radius: 3px;
+      // margin-right: 2em;
 
       &.show {
         width: 40%;

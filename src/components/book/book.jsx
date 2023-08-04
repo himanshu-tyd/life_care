@@ -13,10 +13,10 @@ const Book = () => {
         </div>
         <form>
           <h3>Book Appointment</h3>
-          <input type="text" placeholder="Your name"/>
-          <input type="number" placeholder="Your number"/>
-          <input type="email" placeholder="Your email"/>
-          <input type="date" />
+          <input type="text" placeholder="Full Name" required/>
+          <input type="number" placeholder="Mobile No" required/>
+          <input type="email" placeholder="Email" required/>
+          <input type="date"  required/>
           <CustomButton label={"Book Now"}/>
         </form>
     </div>

@@ -22,7 +22,6 @@ const HeaderPage = () => {
         <Link to="/">About</Link>
         <Link to="/">Doctores</Link>
         <Link to="/">Book</Link>
-        <Link to="/">Blogs</Link>
         <Link to="/">Revies</Link>
       </div>
       <MenuBar onClick={handleShow} />

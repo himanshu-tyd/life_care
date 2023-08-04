@@ -44,7 +44,7 @@ $border: 1em solid var($green);
         border: 2px solid $green;
         box-sizing: content-box;
         background: #fff;
-        // box-shadow: 0px 1px 4px 0px rgb(22 160 133);
+        box-shadow: 0px 1px 4px 0px rgb(22 160 133);
         box-shadow: 6px 5px 0px rgba(22, 160, 133, 0.2);
         text-align: center;
         border-radius: 0.5rem;
@@ -61,16 +61,18 @@ $border: 1em solid var($green);
         width: 100%;
         margin: 2% 0;
         font-size: 1.5em;
-        border-radius: 3px;
+        // border-radius: 3px;
         color: $black;
         text-transform: none;
         height: 0.7em;
-        padding: 1em;
-        border: 2px solid #16a085;
+        padding: 1.5em;
+        border-bottom: 1px solid #777;
+        
         
 
         &:hover {
           background: rgb(242, 242, 242);
+          // border: 1px solid $black;
         }
       }
     }

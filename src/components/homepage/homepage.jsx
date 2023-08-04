@@ -7,6 +7,7 @@ import AboutPage from "../../pages/about-us/about";
 import DoctorList from "../doctor/doctor";
 import Book from "../book/book";
 import Reviews from "../review/review";
+import Footer from "../../pages/footer/footer";
 
 const HomePage = () => {
   return (
@@ -19,6 +20,7 @@ const HomePage = () => {
       <DoctorList />
       <Book/>
       <Reviews/>
+      <Footer/>
     </div>
   );
 };
